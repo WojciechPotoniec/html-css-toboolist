@@ -9,7 +9,7 @@ body {
 }
 
 /* header */
-.title {
+.title{
     display: inline-block;
 }
 
@@ -23,18 +23,21 @@ main {
     height: 30px;
     width: 80px;
     border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
 }
 
 .small{
-    border-bottom: 1px solid #F7F9FA;
+    border-bottom: 2px solid #F7F9FA;
 }
 
 .bg-color-blue {
     background-color: #47ADF1;
     color: white;
 }
-.bg-color-grey {
-    border: 1px solid #f7f9fa;
+.border-color-grey {
+    border: 1px solid #bcbcbc;
 }
 
 /* nav */
@@ -51,9 +54,21 @@ nav {
     width: 25px;
     border-radius: 50%;
 }
+
+.check {
+    color: #11b40b;
+    text-align: center;
+}
+
+.unchecked {
+    color: #ff1100;
+    text-align: center;
+    /* vertical-align: 50%; */
+}
+
 .green {
-    border: 1px solid #74C8B5;
+    border: 1px solid #11b40b;
 }
 .red {
-    border: 1px solid #EB4A40;
+    border: 1px solid #ff1100;
 }
