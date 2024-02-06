@@ -23,6 +23,14 @@ main {
     padding-top: 50px;
 }
 
+.margin {
+    padding-left: 20px;
+}
+
+.text-font {
+    font-size: 22px;
+}
+
 /* table */
 .head-box {
     height: 30px;
