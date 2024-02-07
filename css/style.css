@@ -4,114 +4,117 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* General style */
+:root {
+	--color-main-background: #ffffff;
+	--color-primary-color: #000000;
+	--color-page-background: #f6f8f9;
+	--color-editorial: #09a9ed;
+	--color-goals: #ab5de6;
+	--color-recruiting: #2cc6ab;
+	--color-mobile: #ff9b00;
+	--color-website: #ec4a9d;
+	--color-red-circle: #ff5050;
+	--color-sales: #a3d116;
+    --padding: 20px;
+}
 body {
     font-family: 'Roboto', Arial;
-    background-color: #F6F8F9;
+    background-color: var(--color-page-background);
+}
+
+ul {
+    list-style: none;
+}
+li {
+    padding: 10px 0;
 }
 
 /* header */
 header {
-    background-color: white;
+    background-color:var(--color-main-background);
+    padding: var(--padding);
 }
-.title{
+
+header .title, header img{
     display: inline-block;
-    font-size: 42px;
+    vertical-align: middle;
+    font-size: 3em;
 }
 
 /* main */
 main {
-    height: 100%;
-    padding-top: 50px;
-    border-radius: 10px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color:var(--color-main-background);
+    border-radius: 10px;  
 }
-
-.text-font {
-    font-size: 22px;
+.buttons {
+    border-bottom: 2px solid var(--color-page-background);
 }
-nav { 
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px;
-    border-bottom: 1px solid #F6F8F9;
-
-}
-
-table, h2 {
-    background-color: white;
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* table */
-
-
-.head-box {
-    height: 30px;
-    width: 80px;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 30px;
+.tasks ul li h3, 
+.tasks ul li span {
     display: inline-block;
-    margin-left: 30px;
 }
-.body-box {
-    height: 30px;
-    width: 80px;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 30px;
-    display: inline-block;
-    margin-left: 5px;
+.btn {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: var(--color-main-background);
+    color: #c0c0c0;
+    border: 1px solid #c0c0c0;
 }
-.small{
-    border-bottom: 2px solid #F7F9FA;
-}
-.bg-color-blue {
-    background-color: #47ADF1;
+.btn.blue {
+    background-color: var(--color-editorial);
     color: white;
+    border: 1px solid var(--color-editorial);
 }
-.bg-color-purple {
-    background-color: #9C72E4;
-    color: white;
-}
-.bg-color-purple2 {
-    background-color: #D863A0;
-    color: white;
-}
-.bg-color-green2 {
-    background-color: #64C0A9;
-    color: white;
-}
-.bg-color-orange {
-    background-color: #F29E33;
-    color: white;
-}
-.bg-color-green {
-    background-color: #B0C926;
-    color: white;
-}
-.border-color-grey {
-    border: 1px solid #bcbcbc;
-}
-
-/* nav */
 .circle {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    /* display: inline-block; */
+    text-align: center;
+    line-height: 20px;
+    margin: 0 10px 0 0;
 }
-
 .check {
-    color: #11b40b;
-    text-align: center;
-    border: 1px solid #11b40b;
+    color: var(--color-recruiting);
+    border: 1px solid var(--color-recruiting);
+}
+.cross {
+    color: var(--color-red-circle);
+    border: 1px solid var(--color-red-circle);
 }
 
-.unchecked {
-    color: #ff1100;
-    text-align: center;
-    border: 1px solid #ff1100;
+/* badge */
+.badge {
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 10px;
+    color: white;
+    margin-left: 10px;
+}
+.editorial {
+    background-color: var(--color-editorial);
+}
+.goals {
+    background-color: var(--color-goals);
+}
+.recruiting {
+    background-color: var(--color-recruiting)
+}
+.mobile {
+    background-color: var(--color-mobile);
+}
+.website {
+    background-color: var(--color-editorial);
+}
+.sales {
+    background-color: var(--color-sales);
+}
+
+
+/* utility*/
+.default-pad {
+    padding: var(--padding);
 }

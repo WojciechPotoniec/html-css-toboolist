@@ -10,152 +10,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>ToDoList</title>
 </head>
+
 <body>
     <header>
         <img src="img/logo.png" alt="Logo Boolean">
         <h1 class="title">Toboolist</h1>
     </header>
     <main>
-        <!-- inizio nav -->
-        <nav>
-            <div class="head-box bg-color-blue">
-                <small>Add Task</small>
-            </div>
-            <div class="head-box border-color-grey">
-                <small>Add Section</small>
-            </div>
-        </nav>
-            <!-- inizio table -->
-            <table>
-                <thead>
-                    <h2>&#9660; New Task</h2>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Quarterly Newsletter</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-blue"><small>Editorial</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <thead>
-                    <h2>&#9660; Today</h2>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Recruiting blog post</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-blue"><small>Editorial</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Mobile app launch</strong></span>
-                        </td>
-                        <td>
-                        <div class="body-box bg-color-purple"><small>Q1 Goals</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle unchecked">&#120;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Interview John H.</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-green2"><small>Recruiting</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Summit update to mobile storefronts</strong></span>   
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-orange"><small>Mobile</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <thead>
-                    <h2>&#9660; Upcoming</h2>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle unchecked">&#120;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Schedule meeting with Alex</strong></span>    
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Homepage refresh</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-purple2"><small>Website</small></div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Onboard new Sales team members</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-green"><small>Sales</small></div>   
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="circle check">&check;</div>
-                        </td>
-                        <td>
-                            <span class="text-font"><strong>Review editorial calendar</strong></span>
-                        </td>
-                        <td>
-                            <div class="body-box bg-color-blue"><small>Editorial</small></div>
-                        </td>
-                    </tr>
-                    </tbody>
-            </table>
-        </main>
+        <div class="buttons default-pad">
+            <button class="btn blue">Add Task</button>
+            <button class="btn">Add Section</button>
+        </div>
+        <div class="tasks default-pad">
+            <ul>
+                <li>
+                    <span>&#9660;</span>
+                    <h3>New Task</h3>
+                    <ul>
+                        <li>
+                            <span class="circle check">&check;</span>
+                            <span>Quarterly Newsletter</span>
+                            <span class="badge editorial">Editorial</span>
+                        </li>
+                    </ul>
+                </li>
+                <ul>
+                    <li>
+                        <span>&#9660;</span>
+                        <h3>Today</h3>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Recruiting blog post</span>
+                        <span class="badge editorial">Editorial</span>
+                    </li>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Mobile app launch</span>
+                        <span class="badge goals">Q1 Goals</span>
+                    </li>
+                    <li>
+                        <span class="circle cross">&#120;</span>
+                        <span>Interview John H.</span>
+                        <span class="badge recruiting">Recruiting</span>
+                    </li>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Summit update to mobile storefronts</span>
+                        <span class="badge mobile">Mobile</span>
+                    </li>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>&#9660;</span>
+                        <h3>Upcoming</h3>
+                    <li>
+                        <span class="circle cross">&#120;</span>
+                        <span>Schedule meeting with alex</span>
+                    </li>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Homepage refresh</span>
+                        <span class="badge goals">Website</span>
+                    </li>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Onboard new Sales team members</span>
+                        <span class="badge sales">sales</span>
+                    </li>
+                    <li>
+                        <span class="circle check">&check;</span>
+                        <span>Review editorial calendar</span>
+                        <span class="badge editorial">Editorial</span>
+                    </li>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>
